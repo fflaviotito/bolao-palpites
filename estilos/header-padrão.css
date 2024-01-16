@@ -1,0 +1,94 @@
+/* Importando as configurações gerais e variáveis */
+@import url(gerais.css);
+
+/* Sidebar */
+.menu-lateral {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 70px;
+    height: 100%;
+    padding: 10px;
+    background-color: var(--color-fundo-principal);
+    box-shadow: 2px 0px 5px rgba(0, 0, 0, 0.3);
+    overflow: hidden;
+    transition: .5s;
+}
+
+.menu-lateral.expandir {
+    width: 280px;
+}
+
+/* Botão para expandir o menu */
+.btn-expandir {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--color-fundo-principal);
+    height: 50px;
+    width: 50px;
+    margin-bottom: 30px;
+}
+
+.btn-expandir > .material-symbols-outlined {
+    font-size: 35px;
+    padding: 8px;
+    border-radius: 50%;
+    color: var(--cor-item-sidebar);
+    transition: .5s;
+    cursor: pointer;
+}
+
+.btn-expandir > .material-symbols-outlined:hover {
+    background-color: var(--hover-fundo-principal);
+}
+
+/* Itens do menu */
+.item-menu {
+    display: flex;
+    align-items: center;
+    height: 70px;
+    width: 100%;
+    margin: 10px 0;
+    padding: 10px 0;
+    border-radius: 10px;
+    transition: .5s;
+}
+
+.item-menu:hover {
+    background-color: var(--hover-fundo-principal);
+    box-shadow: 0px 0px 5px white;
+}
+
+.item-menu-active {
+    background-color: var(--hover-fundo-principal);
+    box-shadow: 0px 0px 5px white;
+}
+
+.item-menu > a {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    color: var(--cor-item-sidebar);
+    text-decoration: none;
+}
+
+.item-menu .material-symbols-outlined {
+    font-size: 35px;
+    padding: 8px;
+    margin-right: 10px;
+}
+
+.item-menu .text-link {
+    font-size: 20px;
+    padding-left: 35px;
+    white-space: nowrap;
+    opacity: 0;
+    transition: 1s;
+}
+
+.menu-lateral.expandir .text-link {
+    padding-left: 10px;
+    opacity: 1;
+    transition: 1s;
+}

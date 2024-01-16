@@ -1,0 +1,174 @@
+/* Importando as configurações gerais e variáveis */
+@import url(gerais.css);
+
+/* Corpo da página */
+main.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    margin-left: 70px;
+}
+
+section.container {
+    max-width: 1000px;
+    margin: auto;
+}
+
+div.table {
+    border-radius: 10px;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.3);
+}
+
+.indicador-rodada {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 10px;
+    background-color: #36304A;
+    color: white;
+    border-radius: 10px 10px 0 0;
+}
+
+.indicador-rodada > button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    width: 50px;
+    background-color: var(--color-fundo-principal);
+    color: var(--cor-item-sidebar);
+    border: .5px solid white;
+    border-radius: 10px;
+    box-shadow: 0px 0px 3px rgba(255, 255, 255, 0.5);
+    transition: .5s;
+    cursor: pointer;
+}
+
+.indicador-rodada > button:hover {
+    background-color: var(--hover-fundo-secundario);
+    box-shadow: 0px 0px 5px rgba(255, 255, 255);
+}
+
+.indicador-rodada .material-symbols-outlined {
+    font-size: 40px;
+}
+
+.indicador-rodada > .indicador {
+    font-size: 40px;
+    padding: 8px 15px;
+    border: .5px solid white;
+    border-radius: 10px;
+    box-shadow: 0px 0px 5px rgb(255, 255, 255);
+}
+
+.header-form {
+    display: flex;
+    align-items: center;
+    background-color: #F5F5F5;
+}
+
+.header-form h3 {
+    text-align: center;
+    padding: 5px;
+}
+
+.title-data {
+    width: calc(100% - 550px);
+}
+
+.title-time {
+    width: 220px;
+}
+
+.title-placar {
+    width: 110px;
+}
+
+.jogo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.jogo:nth-child(even) {
+    background-color: #F5F5F5;
+}
+
+.jogo:nth-child(odd) {
+    background-color: white;
+}
+
+.jogo > time {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 40px;
+    padding: 5px;
+}
+
+.jogo > label {
+    display: flex;
+    align-items: center;
+    width: 180px;
+    height: 40px;
+    padding: 5px;
+}
+
+.jogo > label:nth-child(3) {
+    justify-content: right;
+}
+
+.jogo > img {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    padding: 5px;
+}
+
+.jogo > input {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    width: 30px;
+    height: 30px;
+    padding: 5px;
+    margin: 0 5px;
+    border: 1px solid black;
+}
+
+.jogo > input::placeholder {
+    color: rgba(0, 0, 0, 0.3);
+}
+
+.jogo > .fa-solid {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 20px;
+    width: 20px;
+    margin: 5px;
+    color: #36304A;
+}
+
+.btn-form {
+    text-align: right;
+    margin-top: 10px;
+}
+
+.btn-form > input {
+    padding: 10px;
+    margin-left: 10px;
+    background-color: var(--color-fundo-principal);
+    color: white;
+    border: 1px solid black;
+    border-radius: 10px;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.3);
+}
+
+.btn-form > input:hover {
+    background-color: var(--hover-fundo-secundario);
+    transition: .5s;
+}

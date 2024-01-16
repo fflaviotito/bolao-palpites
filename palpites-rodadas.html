@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Bolão de Palpites - Brasileirão Série A">
+    <meta name="author" content="Francisco Flávio | GitHub: https://github.com/fflaviotito">
+    <!-- CSS do header -->
+    <link rel="stylesheet" href="estilos/header-padrão.css">
+    <!-- CCS da página -->
+    <link rel="stylesheet" href="estilos/palpites-rodadas.css">
+    <!-- Icons do Google -->
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet">
+    <!-- icons do Font Awesome-->
+    <script src="https://kit.fontawesome.com/6ecc7a6b2a.js" defer></script>
+    <!-- JS do header -->
+    <script src="script/header-padrão.js" defer></script>
+    <!-- JS da página -->
+    <script src="script/palpites-rodadas.js" defer></script>
+    <!-- Título do site -->
+    <title>Bolão de Palpites | Palpites da Rodada</title>
+</head>
+<body>
+    <header class="container">
+        <!-- Menu de navegação -->
+        <nav class="menu-lateral">
+            <ul>
+                <li class="btn-expandir"> <!-- Botão de expandir menu -->
+                    <span class="material-symbols-outlined">menu</span>
+                </li>
+                <li class="item-menu">
+                    <a href="#">
+                        <span class="material-symbols-outlined">home</span>
+                        <span class="text-link">Home</span>
+                    </a>
+                </li>
+                <li class="item-menu">
+                    <a href="#">
+                        <span class="material-symbols-outlined">trophy</span>
+                        <span class="text-link">Classificação</span>
+                    </a>
+                </li>
+                <li class="item-menu">
+                    <a href="#">
+                        <span class="material-symbols-outlined">edit</span>
+                        <span class="text-link">Palpites Rodadas</span>
+                    </a>
+                </li>
+                <li class="item-menu">
+                    <a href="#">
+                        <span class="material-symbols-outlined">workspace_premium</span>
+                        <span class="text-link">Palpites Tabela</span>
+                    </a>
+                </li>
+                <li class="item-menu">
+                    <a href="#">
+                        <span class="material-symbols-outlined">settings</span>
+                        <span class="text-link">Configurações</span>
+                    </a>
+                </li>
+                <li class="item-menu">
+                    <a href="#">
+                        <span class="material-symbols-outlined">account_circle</span>
+                        <span class="text-link">Perfil</span>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main class="container">
+        <section class="container">
+            <!-- Formulário de envio dos palpites -->
+            <form action="#" method="post" autocomplete="off">
+                <div class="table">
+                    <!-- Indicador da rodada -->
+                    <div class="indicador-rodada">
+                        <button type="button" id="before-rodada">
+                            <span class="material-symbols-outlined">navigate_before</span>
+                        </button>
+                        <h2 class="indicador">Rodada 1</h2>
+                        <button type="button" id="next-rodada">
+                            <span class="material-symbols-outlined">navigate_next</span>
+                        </button>
+                    </div>
+                    <!-- Cabeçalho do formulário -->
+                    <div class="header-form">
+                        <h3 class="title-data">Data e Hora</h3>
+                        <h3 class="title-time">Mandantes</h3>
+                        <h3 class="title-placar">Placar</h3>
+                        <h3 class="title-time">Visitantes</h3>
+                    </div>
+                    <!-- Tabela de jogos da rodada-->
+                    <div class="jogo"> <!-- Primeiro jogo -->
+                        <time datatime="2024-05-01">01/05/2024</time>
+                        <time datatime="16:00">16:00</time>
+                        <label for="time1">Athletico - PR</label>
+                        <img src="imagens/escudos-times/athletico-pr.png" alt="Escudo do time Athletico-PR">
+                        <input type="text" name="time1" id="time1" required placeholder="0">
+                        <span class="fa-solid">X</span>
+                        <input type="text" name="time2" id="time2" required placeholder="0">
+                        <img src="imagens/escudos-times/atlético-go.png" alt="Escudo do time Atlético-GO">
+                        <label for="time2">Atlético - GO</label>
+                    </div>
+                    <div class="jogo"> <!-- Segundo jogo -->
+                        <time datatime="2024-05-01">01/05/2024</time>
+                        <time datatime="16:00">16:00</time>
+                        <label for="time3">Atlético - MG</label>
+                        <img src="imagens/escudos-times/atlético-mg.png" alt="Escudo do time Atlético-MG">
+                        <input type="text" name="time3" id="time3" required placeholder="0">
+                        <span class="fa-solid">X</span>
+                        <input type="text" name="time4" id="time4" required placeholder="0">
+                        <img src="imagens/escudos-times/bahia.png" alt="Escudo do time Bahia">
+                        <label for="time4">Bahia</label>
+                    </div>
+                    <div class="jogo"> <!-- Terceiro jogo -->
+                        <time datatime="2024-05-01">01/05/2024</time>
+                        <time datatime="16:00">16:00</time>
+                        <label for="time5">Botafogo</label>
+                        <img src="imagens/escudos-times/botafogo.png" alt="Escudo do time Botafogo">
+                        <input type="text" name="time5" id="time5" required placeholder="0">
+                        <span class="fa-solid">X</span>
+                        <input type="text" name="time6" id="time6" required placeholder="0">
+                        <img src="imagens/escudos-times/corinthians.png" alt="Escudo do time Corinthians">
+                        <label for="time6">Corinthians</label>
+                    </div>
+                    <div class="jogo"> <!-- Quarto jogo -->
+                        <time datatime="2024-05-01">01/05/2024</time>
+                        <time datatime="16:00">16:00</time>
+                        <label for="time7">Criciúma</label>
+                        <img src="imagens/escudos-times/criciúma.png" alt="Escudo do time Criciúma">
+                        <input type="text" name="time7" id="time7" required placeholder="0">
+                        <span class="fa-solid">X</span>
+                        <input type="text" name="time8" id="time8" required placeholder="0">
+                        <img src="imagens/escudos-times/cruzeiro.png" alt="Escudo do time Cruzeiro">
+                        <label for="time8">Cruzeiro</label>
+                    </div>
+                    <div class="jogo"> <!-- Quinto jogo -->
+                        <time datatime="2024-05-01">01/05/2024</time>
+                        <time datatime="16:00">16:00</time>
+                        <label for="time9">Cuiabá</label>
+                        <img src="imagens/escudos-times/cuiabá.png" alt="Escudo do time Cuiabá">
+                        <input type="text" name="time9" id="time9" required placeholder="0">
+                        <span class="fa-solid">X</span>
+                        <input type="text" name="time10" id="time10" required placeholder="0">
+                        <img src="imagens/escudos-times/flamengo.png" alt="Escudo do time Flamengo">
+                        <label for="time10">Flamengo</label>
+                    </div>
+                    <div class="jogo"> <!-- Sexto jogo -->
+                        <time datatime="2024-05-01">01/05/2024</time>
+                        <time datatime="16:00">16:00</time>
+                        <label for="time11">Fluminense</label>
+                        <img src="imagens/escudos-times/fluminense.png" alt="Escudo do time Fluminense">
+                        <input type="text" name="time11" id="time11" required placeholder="0">
+                        <span class="fa-solid">X</span>
+                        <input type="text" name="time12" id="time12" required placeholder="0">
+                        <img src="imagens/escudos-times/fortaleza.png" alt="Escudo do time Fortaleza">
+                        <label for="time12">Fortaleza</label>
+                    </div>
+                    <div class="jogo"> <!-- Sétimo jogo -->
+                        <time datatime="2024-05-01">01/05/2024</time>
+                        <time datatime="16:00">16:00</time>
+                        <label for="time13">Grêmio</label>
+                        <img src="imagens/escudos-times/grêmio.png" alt="Escudo do time Grêmio">
+                        <input type="text" name="time13" id="time13" required placeholder="0">
+                        <span class="fa-solid">X</span>
+                        <input type="text" name="time14" id="time14" required placeholder="0">
+                        <img src="imagens/escudos-times/internacional.png" alt="Escudo do time Internacional">
+                        <label for="time14">Internacional</label>
+                    </div>
+                    <div class="jogo"> <!-- Oitavo jogo -->
+                        <time datatime="2024-05-01">01/05/2024</time>
+                        <time datatime="16:00">16:00</time>
+                        <label for="time15">Juventude</label>
+                        <img src="imagens/escudos-times/juventude.png" alt="Escudo do time Juventude">
+                        <input type="text" name="time15" id="time15" required placeholder="0">
+                        <span class="fa-solid">X</span>
+                        <input type="text" name="time16" id="time16" required placeholder="0">
+                        <img src="imagens/escudos-times/palmeiras.png" alt="Escudo do time Palmeiras">
+                        <label for="time16">Palmeiras</label>
+                    </div>
+                    <div class="jogo"> <!-- Nono jogo -->
+                        <time datatime="2024-05-01">01/05/2024</time>
+                        <time datatime="16:00">16:00</time>
+                        <label for="time17">Bragantino</label>
+                        <img src="imagens/escudos-times/bragantino.png" alt="Escudo do time Red Bull Brangantino">
+                        <input type="text" name="time17" id="time17" required placeholder="0">
+                        <span class="fa-solid">X</span>
+                        <input type="text" name="time18" id="time18" required placeholder="0">
+                        <img src="imagens/escudos-times/sãopaulo.png" alt="Escudo do time São Paulo">
+                        <label for="time18">São Paulo</label>
+                    </div>
+                    <div class="jogo"> <!--  Décimo jogo -->
+                        <time datatime="2024-05-01">01/05/2024</time>
+                        <time datatime="16:00">16:00</time>
+                        <label for="time19">Vasco</label>
+                        <img src="imagens/escudos-times/vasco.png" alt="Escudo do time Vasco">
+                        <input type="text" name="time19" id="time19" required placeholder="0">
+                        <span class="fa-solid">X</span>
+                        <input type="text" name="time20" id="time20" required placeholder="0">
+                        <img src="imagens/escudos-times/vitória.png" alt="Escudo do time Vitória">
+                        <label for="time20">Vitória</label>
+                    </div>
+                </div>
+                <!-- Botões do formulário -->
+                <div class="btn-form">
+                    <input type="submit" value="Salvar">
+                    <input type="reset" value="Cancelar">
+                </div>
+            </form>
+        </section>
+    </main>
+</body>
+</html>

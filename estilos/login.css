@@ -1,0 +1,240 @@
+/* Importando as configurações gerais e variáveis */
+@import url(gerais.css);
+
+* {
+    font-family: 'Open Sans', sans-serif;
+}
+
+main {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container {
+    height: 500px;
+    width: 1000px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.3);
+    overflow: hidden;
+}
+
+/* Seção de formulários (login e registro) */
+.box-form {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    background-color: white;
+}
+
+.box-form > .registrar, .login {
+    width: 50%;
+    padding: 50px;
+}
+
+.box-form .title {
+    font-size: 2em;
+    text-align: center;
+    padding-bottom: 10px;
+    color: var(--color-fundo-principal);
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.2);
+}
+
+.box-form .sub-title {
+    font-weight: 300;
+    padding: 10px 0 20px 0;
+    text-align: center;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.2);
+}
+
+.acesso-social {
+    padding: 10px 0;
+}
+
+.acesso-social ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.acesso-social li {
+    padding: 10px;
+    background-color: #F5F5F5;
+    border: 1px solid black;
+    border-radius: 5px;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+}
+
+.acesso-social a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 300;
+    text-decoration: none;
+    color: var(--color-fundo-principal);
+}
+
+.acesso-social .fa-brands {
+    font-size: 20px;
+    margin-right: 10px;
+    color: var(--color-fundo-principal);
+}
+
+.acesso-social li:hover {
+    background-color: #E7E7E7;
+}
+
+.acesso-social li:hover .text {
+    text-decoration: underline;
+    font-weight: normal;
+}
+
+.item-form {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 10px;
+}
+
+.item-form label {
+    height: 30px;
+    width: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    transform: translateX(-110px);
+}
+
+.item-form .fa-solid {
+    color: var(--color-fundo-principal);
+}
+
+.item-form input {
+    width: 250px;
+    font-size: 14px;
+    text-indent: 22px;
+    padding: 5px;
+    background-color: #F5F5F5;
+    border: 1px solid black;
+    border-radius: 5px;
+    outline: 0;
+}
+
+.btn-form {
+    width: 250px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: auto;
+}
+
+.btn-form input {
+    width: 80px;
+    padding: 10px;
+    border: 1px solid black;
+    border-radius: 5px;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
+    background-color: #F5F5F5;
+    cursor: pointer;
+}
+
+.btn-form input:hover {
+    background-color: #E7E7E7;
+    text-decoration: underline;
+}
+
+.remember-password {
+    font-weight: 300;
+    padding-top: 20px;
+    text-align: center;
+}
+
+.remember-password > a {
+    text-decoration: none;
+}
+
+.remember-password > a:hover {
+    font-weight: normal;
+    text-decoration: underline;
+}
+
+/* Seção de texto para navegação (login e registro) */
+.box-text {
+    height: 100%;
+    width: 100%;
+    position: relative;
+    top: -100%;
+    display: flex; /* MUDAR PARA FLEX */
+    align-items: center;
+    background-color: var(--color-fundo-principal);
+    color: white;
+    border-radius: 120px;
+    transform: translateX(-50%);
+    transition: ease-in-out .5s;
+}
+
+.box-text.toggle {
+    transform: translateX(50%);
+}
+
+.box-text > .registrar {
+    width: 50%;
+    text-align: center;
+    padding: 50px 0 50px 50px;
+    opacity: 0;
+    transition: .5s;
+}
+
+.box-text.toggle > .registrar {
+    padding-right: 50px;
+    opacity: 1;
+    transition: .5s;
+}
+
+.box-text > .login {
+    width: 50%;
+    text-align: center;
+    padding: 50px;
+    opacity: 1;
+    transition: .5s;
+}
+
+.box-text.toggle > .login {
+    padding-left: 0;
+    opacity: 0;
+    transition: .5s;
+}
+
+.box-text .title {
+    padding: 10px;
+    font-size: 1.5em;
+    text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.3);
+}
+
+.box-text .sub-title {
+    font-weight: 300;
+}
+
+.box-text .sub-title:nth-child(2) {
+    padding-bottom: 40px;
+}
+
+.box-text .button {
+    margin-top: 10px;
+    padding: 5px;
+    background-color: #F5F5F5;
+    border: 1px solid white;
+    border-radius: 5px;
+    box-shadow: 2px 2px 0px rgba(0, 0, 0, 0.3);
+    cursor: pointer;
+}
+
+.box-text .button:hover {
+    text-decoration: underline;
+    background-color: #E7E7E7;
+}

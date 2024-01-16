@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Bolão de Palpites - Brasileirão Série A">
+    <meta name="author" content="Francisco Flávio | GitHub: https://github.com/fflaviotito">
+    <!-- CCS da página -->
+    <link rel="stylesheet" href="estilos/login.css">
+    <!-- JS da página -->
+    <script src="script/login.js" defer></script>
+    <!-- icons do Font Awesome-->
+    <script src="https://kit.fontawesome.com/6ecc7a6b2a.js" defer></script>
+    <title>Bolão de Palpites | Entrar ou Cadastrar</title>
+</head>
+<body>
+    <main>
+        <div class="container">
+            <section class="box-form">
+                <div class="registrar">
+                    <h2 class="title">Cadastre-se</h2>
+                    <div class="acesso-social">
+                        <ul>
+                            <li>
+                                <a href="#">
+                                    <span class="fa-brands fa-google"></span>
+                                    <span class="text">Entrar com Google</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <span class="fa-brands fa-facebook"></span>
+                                    <span class="text">Entrar com Facebook</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <p class="sub-title">Registre-se para continuar.</p>
+                    <form action="#" method="post" autocomplete="on">
+                        <div class="item-form">
+                            <label for="rgt-name">
+                                <span class="fa-solid fa-user"></span>
+                            </label>
+                            <input type="text" name="rgt-name" id="rgt-name" placeholder="Nome Completo" autocomplete="name">
+                        </div>
+                        <div class="item-form">
+                            <label for="rgt-email">
+                                <span class="fa-solid fa-envelope"></span>
+                            </label>
+                            <input type="email" name="rgt-email" id="rgt-email" placeholder="E-mail" autocomplete="email">
+                        </div>
+                        <div class="item-form">
+                            <label for="rgt-password">
+                                <sapn class="fa-solid fa-lock"></sapn>
+                            </label>
+                            <input type="password" name="rgt-password" id="rgt-password" placeholder="Escolha sua senha" autocomplete="new-password">
+                        </div>
+                        <div class="item-form">
+                            <label for="rgt-password-check">
+                                <sapn class="fa-solid fa-lock"></sapn>
+                            </label>
+                            <input type="password" name="rgt-password-check" id="rgt-password-check" placeholder="Confirme sua senha" autocomplete="new-password">
+                        </div>
+                        <div class="btn-form">
+                            <input type="submit" value="Registrar">
+                            <input type="reset" value="Cancelar">
+                        </div>
+                    </form>
+                </div>
+                <div class="login">
+                    <h2 class="title">Login</h2>
+                    <div class="acesso-social">
+                        <ul>
+                            <li>
+                                <a href="#">
+                                    <span class="fa-brands fa-google"></span>
+                                    <span class="text">Entrar com Google</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <span class="fa-brands fa-facebook"></span>
+                                    <span class="text">Entrar com Facebook</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <p class="sub-title">Faça o login para continuar.</p>
+                    <form action="#" method="post" autocomplete="on">
+                        <div class="item-form">
+                            <label for="lgn-email">
+                                <span class="fa-solid fa-envelope"></span>
+                            </label>
+                            <input type="email" name="lgn-email" id="lgn-email" placeholder="E-mail" autocomplete="email">
+                        </div>
+                        <div class="item-form">
+                            <label for="lgn-password">
+                                <sapn class="fa-solid fa-lock"></sapn>
+                            </label>
+                            <input type="password" name="lgn-password" id="lgn-password" placeholder="Senha" autocomplete="current-password">
+                        </div>
+                        <div class="btn-form">
+                            <input type="submit" value="Entrar">
+                            <input type="reset" value="Cancelar">
+                        </div>
+                    </form>
+                    <p class="remember-password">
+                        <a href="#">Esqueceu sua senha?</a>
+                    </p>
+                </div>
+            </section>
+            <section class="box-text">
+                <div class="registrar">
+                    <h2 class="title">Seja bem-vindo!</h2>
+                    <p class="sub-title">Junte-se à comunidade de palpites de futebol.</p>
+                    <h2 class="title">Já possui cadastro?</h2>
+                    <p class="sub-title">Faça login para continuar</p>
+                    <button type="button" class="button">Fazer Login</button>
+                </div>
+                <div class="login">
+                    <h2 class="title">Bem-vindo de volta!</h2>
+                    <p class="sub-title">A bola está rolando: Faça <stong>login</stong> e marque aquele golaço nos palpites.</p>
+                    <h2 class="title">Ainda não possui cadastro?</h2>
+                    <p class="sub-title">Junte-se à comunidade de palpites de futebol.</p>
+                    <button type="button" class="button">Registre-se</button>
+                </div>
+            </section>
+        </div>
+    </main>
+</body>
+</html>
